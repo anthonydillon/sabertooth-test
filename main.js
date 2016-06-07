@@ -12,7 +12,7 @@ device.connect().then(device => {
   console.log(error);
 });
 
-const getBatteryLevel() = function () {
+const getBatteryLevel = function () {
   device.getValue('battery_service')
          .then(value => {
             console.log('Battery level', value);
